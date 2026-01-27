@@ -34,7 +34,3 @@ Clone and open `index.html` in your browser.
 git clone https://github.com/UG27lpu/Assignment01.git
 cd Assignment01
 ```
-
----
-
-Made with ❤️ by John Doe
