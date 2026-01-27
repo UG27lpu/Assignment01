@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Abhi for your next project">
+    <title>Contact | Abhi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader-wrapper" id="loader"><div class="loader"></div></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><span class="logo-text">Abhi</span><span class="logo-dot">.</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="sun-icon">☀️</span><span class="moon-icon">🌙</span>
+                </button>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-tag">Get in Touch</span>
+            <h1 class="page-title">Let's <span class="gradient-text">Connect</span></h1>
+            <p class="page-subtitle">Have a project in mind? Let's work together!</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Feel free to reach out. I'm always open to discussing new projects and opportunities.</p>
+                    <div class="info-items">
+                        <div class="info-item"><span class="info-icon">📧</span><div><h4>Email</h4><p>hello@abhi.dev</p></div></div>
+                        <div class="info-item"><span class="info-icon">📍</span><div><h4>Location</h4><p>India</p></div></div>
+                        <div class="info-item"><span class="info-icon">💼</span><div><h4>Freelance</h4><p>Available</p></div></div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                        <span class="error-message">Please enter your name</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        <span class="error-message">Please enter a valid email</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project inquiry">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                        <span class="error-message">Please enter your message</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                    <div class="form-success" id="formSuccess">Thanks! Your message has been sent.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">Service Packages</h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header"><h3>Basic</h3><div class="price">$299<span>/project</span></div></div>
+                    <ul class="pricing-features"><li>Single Page Website</li><li>Responsive Design</li><li>3 Revisions</li><li>1 Week Delivery</li></ul>
+                    <a href="#contactForm" class="btn btn-secondary">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Popular</div>
+                    <div class="pricing-header"><h3>Pro</h3><div class="price">$599<span>/project</span></div></div>
+                    <ul class="pricing-features"><li>Up to 5 Pages</li><li>Responsive Design</li><li>Contact Form</li><li>5 Revisions</li><li>2 Weeks Delivery</li></ul>
+                    <a href="#contactForm" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header"><h3>Enterprise</h3><div class="price">$999<span>/project</span></div></div>
+                    <ul class="pricing-features"><li>Unlimited Pages</li><li>Custom Design</li><li>CMS Integration</li><li>Unlimited Revisions</li><li>Priority Support</li></ul>
+                    <a href="#contactForm" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand"><a href="index.html" class="footer-logo"><span class="logo-text">Abhi</span><span class="logo-dot">.</span></a><p>Building digital experiences that matter.</p></div>
+                <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-social"><h4>Connect</h4><div class="social-icons"><a href="#" class="social-icon">GH</a><a href="#" class="social-icon">LI</a><a href="#" class="social-icon">TW</a></div></div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('load', () => { setTimeout(() => { document.getElementById('loader').classList.add('hidden'); }, 500); });
+        document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+        document.getElementById('themeToggle').addEventListener('click', () => { const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'; document.documentElement.setAttribute('data-theme', next); localStorage.setItem('theme', next); });
+        document.getElementById('hamburger').addEventListener('click', function() { this.classList.toggle('active'); document.querySelector('.nav-menu').classList.toggle('active'); });
+        // Form validation
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let valid = true;
+            this.querySelectorAll('[required]').forEach(input => {
+                if (!input.value.trim()) { input.parentElement.classList.add('error'); valid = false; }
+                else { input.parentElement.classList.remove('error'); }
+            });
+            const email = document.getElementById('email');
+            if (email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) { email.parentElement.classList.add('error'); valid = false; }
+            if (valid) { document.getElementById('formSuccess').style.display = 'block'; this.reset(); setTimeout(() => { document.getElementById('formSuccess').style.display = 'none'; }, 3000); }
+        });
+    </script>
+</body>
+</html>
