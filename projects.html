@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Abhi's web development projects and creative work">
+    <title>Projects | Abhi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader-wrapper" id="loader"><div class="loader"></div></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><span class="logo-text">Abhi</span><span class="logo-dot">.</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="sun-icon">☀️</span><span class="moon-icon">🌙</span>
+                </button>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-tag">My Work</span>
+            <h1 class="page-title">Creative <span class="gradient-text">Projects</span></h1>
+            <p class="page-subtitle">A showcase of my best work and creative endeavors</p>
+        </div>
+    </section>
+
+    <!-- Project Filter -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="app">App</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image"><div class="project-placeholder">🛒</div><div class="project-overlay"><a href="#project1" class="project-link">View Details</a></div></div>
+                    <div class="project-info"><span class="project-tag">Web Development</span><h3>E-Commerce Platform</h3><p>Full-featured online store with cart and checkout</p></div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-image"><div class="project-placeholder">🎨</div><div class="project-overlay"><a href="#project2" class="project-link">View Details</a></div></div>
+                    <div class="project-info"><span class="project-tag">UI/UX Design</span><h3>Dashboard Design</h3><p>Analytics dashboard with dark theme</p></div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image"><div class="project-placeholder">📰</div><div class="project-overlay"><a href="#project3" class="project-link">View Details</a></div></div>
+                    <div class="project-info"><span class="project-tag">Web Development</span><h3>Blog Platform</h3><p>Modern blogging platform with CMS</p></div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-image"><div class="project-placeholder">📱</div><div class="project-overlay"><a href="#project4" class="project-link">View Details</a></div></div>
+                    <div class="project-info"><span class="project-tag">Mobile App</span><h3>Fitness Tracker</h3><p>Health and workout tracking app</p></div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-image"><div class="project-placeholder">🖼️</div><div class="project-overlay"><a href="#project5" class="project-link">View Details</a></div></div>
+                    <div class="project-info"><span class="project-tag">Branding</span><h3>Brand Identity</h3><p>Complete branding for startup</p></div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image"><div class="project-placeholder">🍕</div><div class="project-overlay"><a href="#project6" class="project-link">View Details</a></div></div>
+                    <div class="project-info"><span class="project-tag">Web Development</span><h3>Restaurant Website</h3><p>Modern restaurant with online ordering</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSS Modal -->
+    <div id="project1" class="modal">
+        <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <h2>E-Commerce Platform</h2>
+            <p>A fully-featured online store built with modern web technologies. Features include product catalog, shopping cart, secure checkout, and admin dashboard.</p>
+            <div class="modal-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand"><a href="index.html" class="footer-logo"><span class="logo-text">Abhi</span><span class="logo-dot">.</span></a><p>Building digital experiences that matter.</p></div>
+                <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-social"><h4>Connect</h4><div class="social-icons"><a href="#" class="social-icon">GH</a><a href="#" class="social-icon">LI</a><a href="#" class="social-icon">TW</a></div></div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('load', () => { setTimeout(() => { document.getElementById('loader').classList.add('hidden'); }, 500); });
+        const themeToggle = document.getElementById('themeToggle');
+        document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+        themeToggle.addEventListener('click', () => { const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'; document.documentElement.setAttribute('data-theme', next); localStorage.setItem('theme', next); });
+        const hamburger = document.getElementById('hamburger');
+        hamburger.addEventListener('click', () => { hamburger.classList.toggle('active'); document.querySelector('.nav-menu').classList.toggle('active'); });
+        // Filter
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.project-card').forEach(card => {
+                    card.style.display = (filter === 'all' || card.dataset.category === filter) ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
