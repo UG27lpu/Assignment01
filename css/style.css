@@ -1,0 +1,19 @@
+/* CSS Variables */
+:root {
+    --primary-color: #6366f1;
+    --text-color: #333;
+    --bg-color: #ffffff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
