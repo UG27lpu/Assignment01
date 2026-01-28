@@ -36,5 +36,3 @@ cd Assignment01
 ```
 
 ---
-
-Made with ❤️ by Abhishek
